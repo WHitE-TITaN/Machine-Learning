@@ -4,7 +4,7 @@ project (MACHINE_LEARNING LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 
+include_directories(${CMAKE_SOURCE_DIR}/Headers)
 # Add source to this project's executable.
-add_executable (NeuralNetwork "NeuralNetwork.cpp" "NeuralNetwork.h" "Headers/SelfAttention.h" "Headers/TextProcessing.h" "Headers/SelfAttention.cpp" "Headers/TextProcessing.cpp"  "Headers/LSTM.h" "Headers/LSTM.cpp")
-
+add_executable (NeuralNetwork "NeuralNetwork.cpp" "Headers/SelfAttention.cpp" "Headers/TextProcessing.cpp")
 
