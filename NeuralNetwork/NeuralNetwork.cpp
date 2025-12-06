@@ -14,7 +14,11 @@ int main() {
 	userInput inFeedText;
 
 	//loading the files
-	inFeedText.loadGloveVectors("C:/Users/dk488/source/repos/vocabulary/glove.txt");
+	if(!inFeedText.loadGloveVectors("C:/Users/dk488/source/repos/vocabulary/glove.txt")){
+		std::cerr<<"failed to load GloVe vectors."<<std::endl;
+		exit(EXIT_FAILURE);
+	}
+
 	bool backPropogation = false;
 	std::cout << "\n\n\n\t\t\t\tWELLCOME";
 	std::string UInput;
