@@ -1,8 +1,9 @@
+#pragma once
+
 #include <iostream>
 #include <vector>
 #include <random>
 #include <cmath>
-#include "TextProcessing.h"
 #include <unordered_map>
 
 // making context awair / multiplying the matrix
@@ -24,9 +25,7 @@ std::vector<std::vector<double>>Softmax(std::vector<std::vector<double>> MainVec
 // m(12) will be the multiplication of 1st word independent vector to second(2nd) independent vector array -> and so on
 
 
-
-//exited with code - 1073740791 (0xc0000409). stack over flow memory access out of bound.
-std::vector<std::vector<double>> selfAttention(std::vector<double> vector) {
+inline std::vector<std::vector<double>> selfAttention(std::vector<double> vector) {
 	std::vector<std::vector<double>> returnVector;
 	for (size_t i = 0; i < vector.size(); i++) {
 		std::vector<double> Processing(vector.size(), 0.0);
@@ -43,7 +42,7 @@ std::vector<std::vector<double>> selfAttention(std::vector<double> vector) {
 
 
 // for normilization of the matrix
-std::vector<std::vector<double>> Softmax(std::vector<std::vector<double>> MainVector, int size){
+inline std::vector<std::vector<double>> Softmax(std::vector<std::vector<double>> MainVector, int size){
 	double** Temp = new double* [size];
 	for (int i = 0; i < size; i++) {
 		Temp[i] = new double[size];
