@@ -30,6 +30,8 @@ This is a research-focused project: it is intended to help developers and resear
 
 - `build/` and `NeuralNetwork/build/` — CMake-generated build artifacts (Visual Studio solution and projects on Windows).
 
+<img src="diagrams/structure.svg" alt="Project Structure Diagram"/>
+
 **Component details**
 
 - `TextProcessing` (via `TextProcessing.h`)
