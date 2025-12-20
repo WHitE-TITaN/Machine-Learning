@@ -19,7 +19,7 @@ jobs:
 
       - name: Configure CMake
         run: |
-          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+          cmake -S NeuralNetwork -B build -DCMAKE_BUILD_TYPE=Release
 
       - name: Build
         run: |
