@@ -1,5 +1,5 @@
 ﻿// NeuralNetwork.cpp : Defines the entry point for the application.
-
+//collabrated achimevement unlocking
 #include <iostream>
 #include "Headers/TextProcessing.h"
 #include "Headers/SelfAttention.h"
